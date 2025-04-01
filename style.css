@@ -1,0 +1,81 @@
+#game {
+  width: 600px;
+  height: 200px;
+  border-bottom: solid 2px black;
+  margin: auto;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/google-chrome-guess-the-font-dinosaur-game-nvidia-shield-chrome-59de29496296b240a3fd2e320a1acf6c.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 40px;
+  height: 40px;
+  background-image: url(././img/4-original.png);
+  background-size: 40px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: cactusMov 1s infinite linear;
+}
+
+@keyframes cactusMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+/* #bird {
+  width: 40px;
+  height: 40px;
+  background-image: url(./img/Z0HPe3.png);
+  background-size: 40px 40px;
+  position: relative;
+  top: 50px;
+  left: 560px;
+  animation: birdMov 1s infinite linear;
+}
+
+@keyframes birdMov {
+  0% {
+    left: 560px;
+  }
+  100% {
+    left: -20px;
+  }
+} */
+
+.jump {
+  animation: jump 350ms linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 120px;
+  }
+
+  50% {
+    top: 60px;
+  }
+
+  80% {
+    top: 120px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
