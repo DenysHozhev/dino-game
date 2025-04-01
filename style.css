@@ -3,26 +3,29 @@
   height: 200px;
   border-bottom: solid 2px black;
   margin: auto;
+  background-image: url(./img/fon-igri-mario-1.jpg);
+  background-size: 600px 200px;
 }
 
 #dino {
   width: 50px;
   height: 50px;
-  background-image: url(./img/google-chrome-guess-the-font-dinosaur-game-nvidia-shield-chrome-59de29496296b240a3fd2e320a1acf6c.png);
+  background-image: url(./img/mario.png);
   background-size: 50px 50px;
   position: relative;
-  top: 150px;
+  top: 125px;
+  left: 50px;
 }
 
 #cactus {
-  width: 40px;
-  height: 40px;
-  background-image: url(././img/4-original.png);
-  background-size: 40px 40px;
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/gribmario.png);
+  background-size: 60px 60px;
   position: relative;
-  top: 110px;
+  top: 80px;
   left: 580px;
-  animation: cactusMov 1s infinite linear;
+  animation: cactusMov 1.5s infinite linear;
 }
 
 @keyframes cactusMov {
@@ -32,6 +35,9 @@
   100% {
     left: -20px;
   }
+}
+.hidden {
+  display: none;
 }
 
 /* #bird {
@@ -54,28 +60,38 @@
   }
 } */
 
+.down {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/google-chrome-guess-the-font-dinosaur-game-nvidia-shield-chrome-59de29496296b240a3fd2e320a1acf6c.png);
+  background-color: blue;
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
 .jump {
   animation: jump 350ms linear;
 }
 
 @keyframes jump {
   0% {
-    top: 150px;
+    top: 125px;
   }
 
   30% {
-    top: 120px;
+    top: 95px;
   }
 
   50% {
-    top: 60px;
+    top: 35px;
   }
 
   80% {
-    top: 120px;
+    top: 95px;
   }
 
   100% {
-    top: 150px;
+    top: 125px;
   }
 }
